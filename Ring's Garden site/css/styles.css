@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+body{
+  line-height:1.7;
+  font-family:-apple-system, BlinkMacSystemFont, '遊ゴシック Medium', YuGothic, YuGothicM, 'hiragino kaku Gothic ProN', 'Helvetica Neue', Meiryo,sans-serif;
+  color:#000;
+}
+
+a,
+a:link{
+  color:#3585b7;
+}
+a:visited{
+  color:#6252B7;
+}
+a:hover{
+  text-decoration:none;
+  color:#555;
+}
+
+/* header */
+
+header{
+  display:flex;
+}
+
+header h1{
+  margin:25px 0 0 20px;
+}
+
+header nav{
+  margin:0 0 0 auto;
+}
+
+header ul{
+  list-style-type:none;
+  margin:20px 0;
+  padding:0;
+  display:flex;
+}
+
+header ul li a,
+header ul li a:link,
+header ul li a:visited{
+  display:block;
+  padding:10px 15px;
+  text-decoration:none;
+  color:#000;
+}
+
+header ul li a:hover{
+  color:#888;
+}
+
+/* footer */
+
+footer{
+  background:#ede6e6;
+  padding:20px;
+}
+
+footer ul{
+  list-style-type:none;
+  margin:0 0 5px;
+  padding:0;
+  display:flex;
+  justify-content:flex-end;
+}
+
+footer ul li{
+  margin:0 0 0 20px;
+}
+
+footer ul li a,
+footer ul li a:link,
+footer ul li a:visited{
+  text-decoration:none;
+  font-size:13px;
+  color:#000;
+}
+
+footer ul li a:hover{
+  color:#888;
+}
+
+footer p{
+  margin:0;
+  text-align:right;
+  color:#888;
+}
+
+/* main */
+
+main .inner{
+  width:990px;
+  margin:50px auto;
+}
+
+main h2{
+  margin:50px 0 20px;
+  font-weight:normal;
+  font-size:25px;
+  color:#7f6666;
+}
+
+main p{
+  margin:0 0 15px;
+}
+
+main dl{
+  width:100%;
+}
+
+main dl dt{
+  float:left;
+  clear:both;
+  padding:10px 0;
+  color:#998484;
+}
+
+main dl dd{
+  border-bottom:1px solid #ccc;
+  margin:0;
+  padding:10px 0 10px 15%;
+
+}
+
+main .title{
+  padding:50px;
+  background:#f4e3e3;
+}
+
+main .title h1{
+  margin:0;
+  line-height:1;
+  font-size:45px;
+  color:#7f6666;
+}
+
+main .title ol{
+  list-style-type:none;
+  margin:20px 0 0;
+  padding:0;
+  display:flex;
+}
+
+main .title ol li{
+  font-size:13px;
+}
+
+main .title ol li::after{
+  content:">";
+  margin:0 5px 0 10px;
+}
+
+main .title ol li:last-child::after{
+  content:none;
+}
+
+main ul{
+  margin:0 0 60px;
+  padding:0 0 0 20px;
+}
+
+
+/* home */
+
+.home main .visual{
+  background:url(../images/visual.jpg) no-repeat center top;
+  height:550px;
+  padding:200px 50px 50px;
+  box-sizing:border-box;
+}
+
+.home main .visual p{
+  color:#7f6666;
+}
+
+.home main .visual p.catch{
+  font-size:45px;
+}
+
+.home main section{
+  display:flex;
+  margin-top:50px;
+}
+
+.home main section div{
+  padding:0 40px 0 0;
+}
+
+.home main section:first-child{
+  flex-direction:row-reverse;
+}
+
+.home main section:first-child div{
+  padding:0 0 0 40px;
+}
+
+/* guide */
+
+.guide main .about{
+  display:flex;
+} 
+
+.guide main .about div{
+  width:50%;
+}
+
+.guide main dl{
+  font-size:18px;
+}
+
+.guide main dd{
+  border:none;
+  padding-left:5em; 
+}
+
+.guide main table{
+  width:100%;
+  text-align:center;
+}
+
+.guide main table,
+.guide main table th,
+.guide main table td{
+  border:solid 1px #ccc;
+  border-collapse:collapse;
+}
+
+.guide main table th,
+.guide main table td{
+  padding:5px;
+}
+
+.guide main table th{
+  background:#f7f0f0;
+}
+
+
+
+/* cast */
+
+.cast main .cast-profile{
+  display:flex;
+  margin-top:50px;
+}
+
+.cast main .cast-profile dl{
+  margin:0 0 0 50px;
+  font-size:18px;
+}
+
+/* contact */
+
+.contact main .must{
+  color:#ff0000;
+  margin:0 5px;
+}
+
+.contact main p{
+  margin:0 0 50px;
+}
+
+.contact main dl dd{
+  padding-left:15em;
+}
+
+.contact main input,
+.contact main textarea{
+  border:1px solid #ccc;
+  padding:5px;
+  box-sizing:border-box;
+}
+
+.contact main input[type="email"]{
+  width:50%;
+}
+
+.contact main textarea{
+  width:100%;
+}
+
+.contact main .submit{
+  margin:10px 0;
+  text-align:center;
+}
+
+.contact main input[type="submit"]{
+  color:#fff;
+  padding:20px;
+  width:300px;
+  font-weight:bold;
+  background-color:#7f6666;
+  font-size:18px;
+  cursor:pointer;
+}
+
+.contact main input[type="submit"]:hover{
+  opacity:0.8;
+}
+
+
+/* sitemap */
+
+.sitemap main ul{
+  margin-top:50px;
+}
+
+.sitemap main ul li {
+  margin: 0 0 20px;
+}
+

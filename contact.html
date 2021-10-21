@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header-title"><a href="index.html">PORTFOLIO<br>OF<br>HIROTO<br>TANOHATA</a></h1>
+        <h2 class="header-subtitle">WebDirection/WebMarketer/Musician</h2>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="level1-heading">
+        <span class="level1-heading__inner">CONTACT</span>
+      </h1>
+
+      <section class="form">
+        <div class="form__inner">
+          <h2 class="form__title">お問い合わせフォーム</h2>
+
+          <form action="program.php" method="post">
+              <input type="text" class="form__item" name="name" required placeholder="お名前•企業名">
+              <input type="text" name="kana-name"  class="form__item" required placeholder="フリガナ">
+              <input type="email" name="email"  class="form__item" required placeholder="メールアドレス">
+              <textarea name="comment" cols="30" rows="10" wrap="soft"  class="form__item form__textarea" required placeholder="お問い合わせ内容を入力してください"></textarea>
+              <button class="btn form__btn">送信</button>
+            </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__inner">
+        <small class="footer-copyright">©️ 2021 HIROTO TANOHATA</small>
+      </div>
+     </footer>
+  </body>
+</html>

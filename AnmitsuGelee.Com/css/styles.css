@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+html{
+  box-sizing:border-box;
+}
+
+*,*::before,*::after{
+  box-sizing:inherit;
+}
+
+body{
+  background-color:#000;
+  font-family:"Hannari";
+}
+
+a {
+  text-decoration:none;
+  color:#fff;
+}
+
+header{
+  background-image: url(../img/test1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  color:#fff;
+}
+
+
+
+@keyframes showTextFromBottom {
+  0%{
+    transform:translateY(100%);
+  }
+  100%{
+    transform:translateY(0%);
+  }
+}
+
+.mainTitle span{
+  display: inline-block;
+}
+
+.mainTitle > span{
+  overflow:hidden;
+}
+
+.mainTitle > span > span{
+  animation:showTextFromBottom 3s ease-out backwards;
+  /* transform:translateY(50%); */
+}
+
+main{
+  max-width:1200px;
+  width:100%;
+  margin:50px auto 0;
+  font-size: 20px;
+  background-color: #000;
+  color:#fff;
+}
+
+main .subTitle{
+  font-size: 30px;
+  height:400px;
+  margin-top: 100px;
+  text-align:center;
+}
+
+main .menuTitle{
+  font-size: 30px;
+}
+
+main section{
+  position: relative;
+  height: 400px;
+}
+
+
+main section h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+main section p{
+  line-height: 1.6;
+}
+
+
+main section:not(:first-of-type){
+  margin-top: 200px;
+}
+
+main section .image{
+  position: absolute;
+  top:0;
+  width:50%;
+  height:500px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow:0px 5px 30px 0px rgb(255,255,255);
+}
+
+main section .image img{
+  position:absolute;
+  top:-10;
+  left:-10;
+  width:120%;
+  height: 120%;
+  object-fit: cover;
+}
+
+main section .circle{
+  position: absolute;
+  top:200px;
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(0deg, rgb(246, 243, 247),rgb(32, 20, 20));
+  box-shadow:0px 5px 30px 0px rgb(255,255,255);
+  transition:.3s;
+}
+
+main section:nth-of-type(odd){
+  padding-right: 55%;
+}
+
+main section:nth-of-type(odd) .image{
+  right:0;
+}
+
+/* main section:nth-of-type(odd) .circle{
+  left:60px;
+} */
+
+main section:nth-of-type(even){
+  padding-left: 55%;
+}
+
+main section:nth-of-type(even) .image{
+  left:0;
+}
+
+main section:nth-of-type(1) .circle{
+  /* right:80px; */
+  top:0%;
+  left:30%;
+}
+main section:nth-of-type(2) .circle{
+  /* right:80px; */
+  top:0%;
+  right:30%;
+}
+main section:nth-of-type(3) .circle{
+  /* right:80px; */
+  top:0%;
+  left:20%;
+}
+main section:nth-of-type(4) .circle{
+  /* right:80px; */
+  top:0%;
+  right:10%;
+}
+
+
+footer{
+  background-image: url(../img/background.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+  padding: 20px;
+  color:#fff;
+}
+
+footer .sns{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  padding: 20px;
+  cursor:pointer;
+} 
+
+footer .sns li{
+  padding-left: 20px;
+}
+
+footer .sns li img{
+  vertical-align: middle;
+  margin: 20px;
+}
+
+footer .sns li:hover{
+  opacity: .8;
+}
+
+footer .footer-nav{
+  height:200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+footer .footer-nav li::after{
+  content:"|";
+  margin: 10px;
+}
+
+footer .footer-nav li:last-child::after{
+  content:none;
+}
+
+footer footer-nav li:hover{
+  opacity:.8;
+}
+
+
+footer p{
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width:768px){
+  /* header */
+  .mainTitle{
+    font-size: 30px;
+  }
+
+  /* main */
+  main .subTitle{
+    font-size: 14px;
+  }
+
+  main .menuTitle{
+    font-size: 24px;
+  }
+ 
+  main section .image{
+    position:static;
+    top:0;
+    width:100%;
+    height:300px;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow:0px 5px 30px 0px rgb(255,255,255);
+  }
+
+  main section .image img{
+    position:static;
+    top:-10;
+    left:-10;
+    width:120%;
+    height: 120%;
+    object-fit: cover;
+  }
+  main section:nth-of-type(odd){
+    padding-right: 0%;
+  }
+  
+  main section:nth-of-type(even){
+    padding-left: 0%;
+  }
+
+
+
+}
